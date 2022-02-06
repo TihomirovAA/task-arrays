@@ -38,10 +38,9 @@ export function arrayFiltering(data) {
 export function arrayPushing(array1, array2) {
   let res = [];
   let count = 0;
-  for (let i = 0; res.length < 10; i = i + 2){
-    res[i] = array1[count];
-    res[i+1] = array2[count];
-    count++
+  for (let i = 0; res.length < 10; i++){
+    res.push(array1[i])
+    res.push(array2[i])
   }
   return res;
 }
